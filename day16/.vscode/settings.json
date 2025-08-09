@@ -1,0 +1,31 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "javohir",
+      "database": "localdb",
+      "username": "javohir"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "javohir",
+      "database": "many",
+      "username": "javohir"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "javohir",
+      "database": "many1",
+      "username": "javohir"
+    }
+  ]
+}
