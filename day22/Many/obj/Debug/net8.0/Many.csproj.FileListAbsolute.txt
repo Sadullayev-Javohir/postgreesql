@@ -1,0 +1,6 @@
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.csproj.AssemblyReference.cache
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.GeneratedMSBuildEditorConfig.editorconfig
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.AssemblyInfoInputs.cache
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.AssemblyInfo.cs
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.csproj.CoreCompileInputs.cache
+/home/u/Desktop/MICROSOFT/PRACTISE/postgreesql/day22/Many/obj/Debug/net8.0/Many.sourcelink.json
