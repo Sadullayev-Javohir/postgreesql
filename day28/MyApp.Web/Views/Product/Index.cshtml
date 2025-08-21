@@ -1,0 +1,16 @@
+@model IEnumerable<MyApp.Web.Models.Product>
+
+<h2>Products</h2>
+
+<ul>
+  @foreach (var item in Model)
+  {
+    <li>@item.Name - @item.Price</li>
+  }
+</ul>
+
+<form asp-action="Create" method="post">
+  <input type="text" name="Name" placeholder="Product Name" />
+  <input type="number" name="Price" placeholder="Price" step="0.01" />
+  <button type="submit">Add Product</button>
+</form>
