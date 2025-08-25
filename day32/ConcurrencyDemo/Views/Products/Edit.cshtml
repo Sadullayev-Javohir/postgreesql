@@ -1,0 +1,38 @@
+@model Product
+@{
+  ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<form asp-action="Edit" method="post">
+  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+  <input type="hidden" asp-for="Id" />
+  <!-- Concurrency token (Postgres system column) -->
+  <input type="hidden" asp-for="Xmin" />
+
+  <div class="mb-3">
+    <label asp-for="Name" class="form-label"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+  </div>
+
+  <div class="mb-3">
+    <label asp-for="Price" class="form-label"></label>
+    <input asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Save</button>
+  <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+<p class="text-muted mt-3">
+  Agar “Concurrency konflikti” xabari chiqsa, demak kimdir shu yozuvni sizdan oldin o‘zgartirgan.
+  Hozirgi sahifada bazadagi joriy qiymatlar ko‘rsatiladi — xohlasangiz yangidan saqlang.
+</p>
+
+@section Scripts {
+  <partial name="_ValidationScriptsPartial" />
+}
