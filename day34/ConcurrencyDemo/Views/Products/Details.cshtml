@@ -1,0 +1,20 @@
+@model ConcurrencyDemo.Models.Product
+
+@{
+  ViewData["Title"] = "Product Details";
+}
+
+<h1 class="mb-4">Product Details</h1>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">@Model.Name</h5>
+    <p class="card-text">Price: @Model.Price</p>
+    <p class="card-text">Id: @Model.Id</p>
+  </div>
+</div>
+
+<div class="mt-3">
+  <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary" >Edit</a>
+  <a asp-action="Index" class="btn btn-secondary">Back to list</a>
+</div>

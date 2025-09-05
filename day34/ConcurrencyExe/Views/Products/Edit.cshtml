@@ -1,0 +1,27 @@
+@model ConcurrencyExe.Models.Product
+
+@{
+  ViewData["Title"] = "Edit";
+}
+
+<h1>Product Edit</h1>
+
+<form asp-action="Edit" method="post">
+  <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+  <input type="hidden" asp-for="Id" />
+
+  <div>
+    <label asp-for="Name"></label>
+    <input asp-for="Name">
+  </div>
+
+  <div>
+    <label asp-for="Price"></label>
+    <input asp-for="Price" type="number" step="0.01">
+  </div>
+
+  <input type="hidden" asp-for="Id" />
+  <input type="hidden" asp-for="xmin" />
+
+  <button type="submit">Save</button>
+</form>
