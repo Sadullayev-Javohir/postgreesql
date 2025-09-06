@@ -1,0 +1,24 @@
+@model Product
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Product Details</title>
+</head>
+
+<body>
+  <h1>Product Details</h1>
+
+  <p><strong>Id:</strong> @Model.Id</p>
+  <p><strong>Name:</strong> @Model.Name</p>
+  <p><strong>Price:</strong> @Model.Price</p>
+  <p><strong>Tenant Id:</strong> @Model.TenantId</p>
+
+  <p>
+    <a href="/Product/Index">Back to List</a>
+  </p>
+</body>
+
+</html>

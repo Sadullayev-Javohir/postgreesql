@@ -1,0 +1,20 @@
+@model IEnumerable<MyMvcApp.Models.Product>
+
+<h2>Products</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var p in Model)
+    {
+      <tr>
+        <td>@p.Name</td>
+        <td>@p.Category.Name</td>
+      </tr>
+    }
+  </tbody>
+</table>
